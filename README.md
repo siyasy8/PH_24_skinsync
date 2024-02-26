@@ -25,3 +25,5 @@ Throughout our journey, we learned perseverance, understanding that challenges a
 **What's next for skinSync**
 
 For future improvements to the app, we plan to increase the iterations of our algorithm to enhance its sensitivity towards detecting subtle acne. This refinement aims to ensure that even the most minor skin irregularities are accurately identified, providing a more comprehensive and personalized skincare analysis. Additionally, incorporating user-uploaded photos to train our machine learning model will significantly increase its confidence and accuracy. By leveraging diverse real-world data, we intend to fine-tune the app's performance, making it more adaptable and effective for users with varying skin types and conditions.
+
+https://docs.google.com/presentation/d/1ToVn8Qa4XaYfztRO0Ln-E-hZW4W3Gu-h3cZA6oDooL8/edit
