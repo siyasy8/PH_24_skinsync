@@ -1,5 +1,27 @@
-# swiftui-bootstrap
+**Inspiration**
 
-SwiftUI Bootstrap Project to Start Your Next App Quickly
+Traditional skincare approaches often adopt a one-size-fits-all model, overlooking the diverse needs and concerns of various ethnicities and skin tones. This oversight becomes particularly evident when dealing with skin conditions, as they can manifest differently on People of Color (POC). Furthermore, the effectiveness and potential side effects of skincare ingredients vary significantly across different skin tones. Users often remain unaware that the skincare products they use may contain ingredients that are unsuitable for their specific skin type or acne condition. Recognizing the gaps in current skincare practices, we were inspired to create skinSync – an app designed to revolutionize the way individuals approach skincare by offering personalized solutions.
 
-Created by <a href="https://iosapptemplates.com">iOS templates</a> with help from <a href="https://instamobile.io">React Native Templates</a>
+**What it does**
+
+Users begin by creating a tailored profile, inputting essential details such as race, gender, age, skin type, and color. The app's ML algorithm further enhances this customization by analyzing user-uploaded pictures of their problem areas to accurately identify the type of acne. The explore page offers targeted product recommendations, categorized by the identified acne type, their race, gender, skin type, and age. Users can click on any of the recommended products, and the app will display the ingredients in the selected product. Additionally, a comprehensive list of ingredients categorized as beneficial or potentially less suitable for the user's skin will be presented.
+
+**How we built it**
+
+Firstly, we sketched a storyboard to organize our app pages. Then, we compiled a vast dataset consisting of images portraying various types of acne, classified into dark spots, papules, whiteheads, blackheads, pustules, and nodules. Using Apple's CreateML, we trained this dataset, enabling our system to recognize different acne types through image analysis. Next, we curated a dataset encompassing diverse skincare products and their respective ingredients. We classified these ingredients into categories of suitability for different races and specific acne types, documented in a CSV file. This laid the foundation for our personalized skincare recommendations. Moving to the implementation phase, we utilized Xcode and Swift to design a Model-View-Controller architecture with a clean user interface, including distinct content and product views. The integration of the CreateML model into Xcode ensured incorporation of the acne recognition feature.
+
+**Challenges we ran into**
+
+One significant hurdle was the training of our machine learning algorithm using Apple's Create ML. Navigating the intricacies of achieving the lowest loss possible within a constrained timeline presented a significant difficulty for us. Balancing the need for optimal model accuracy with the time constraints required a focused and iterative approach, pushing us to refine our strategies to ensure the successful implementation of a highly accurate and efficient acne recognition system. Another challenge involved the integration of our complex CSV files containing ingredient classifications into Xcode. Additionally, learning Swift syntax posed an initial learning curve for our team. Overcoming syntax-related obstacles required dedicated effort and collaboration among us. The integration of the machine learning model into Xcode was a multifaceted challenge. Ensuring the smooth interaction between the Create ML model and the user interface demanded a deep understanding of both machine learning and app development.
+
+**Accomplishments that we're proud of**
+
+One notable milestone was the successful integration of Swift into our development process, marking our inaugural experience with this powerful programming language. Navigating the intricacies of Swift syntax and tapping into its capabilities became a gratifying learning curve. Equally noteworthy was achieving our first successful training of an ML model on Create ML. Overcoming the challenges of optimizing the model for accuracy while adhering to a tight timeline showcased our team's dedication to mastering cutting-edge technologies and delivering a robust solution. Our debugging strategies played a pivotal role in streamlining the development process. Tackling complex issues with a systematic and collaborative approach allowed us to efficiently troubleshoot. Most fulfilling was the realization that our efforts were directed towards creating an app that would make a meaningful impact, particularly in marginalized communities. skinSync stands not only as a technological achievement but also as a tool designed to address the unique skincare needs of individuals from diverse backgrounds, empowering them with personalized solutions and contributing to more inclusive and accessible skincare practices.
+
+**What we learned**
+
+Throughout our journey, we learned perseverance, understanding that challenges are simply opportunities for growth. Exploring Swift and Xcode introduced us to new realms of innovation, allowing us to bring our ideas to life with new technology. This experience underscored the power of resilience and adaptability, teaching us that with determination and the right tools, any of our visions can become a reality.
+
+**What's next for skinSync**
+
+For future improvements to the app, we plan to increase the iterations of our algorithm to enhance its sensitivity towards detecting subtle acne. This refinement aims to ensure that even the most minor skin irregularities are accurately identified, providing a more comprehensive and personalized skincare analysis. Additionally, incorporating user-uploaded photos to train our machine learning model will significantly increase its confidence and accuracy. By leveraging diverse real-world data, we intend to fine-tune the app's performance, making it more adaptable and effective for users with varying skin types and conditions.
